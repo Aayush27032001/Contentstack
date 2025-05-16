@@ -1,0 +1,112 @@
+.hero-wrapper {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: -113px;
+  padding-top: 113px;
+  padding-top: 90px;
+  overflow: hidden;
+  .hero-background {
+    background: url(../../assets/s-new.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+  }
+  .hero-container {
+    max-width: 1320px;
+    margin-inline: auto;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-16px);
+  }
+  .hero-content {
+    width: 58.3333%;
+  }
+  .hero-right {
+    width: 41.6667%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-abstarct-lottie {
+    right: 0%;
+    top: -2%;
+    width: 64%;
+    height: 720px;
+    position: absolute;
+    z-index: 1;
+  }
+  .hero-content {
+    padding: 0px 0.75px 1rem 0.75rem;
+    a {
+      text-transform: uppercase;
+      color: #637392;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        .arrow-icon {
+          transform: scale(1.25);
+        }
+      }
+    }
+    .arrow-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin-left: 8px;
+      background: linear-gradient(133deg, #7c4dff 29.74%, #1783ff 86.78%);
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 62px;
+      padding: 1rem 0px;
+      color: #253143;
+      line-height: 62px;
+      letter-spacing: 1px;
+      span {
+        color: #7c4dff;
+      }
+    }
+    p {
+      font-size: 1.25rem;
+      color: #253143;
+      padding-bottom: 3.5rem;
+      line-height: 1.5;
+    }
+    button.solid {
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 4px;
+      color: #fff;
+      border: none;
+      background: #7c4dff;
+      text-transform: uppercase;
+      padding: 1rem;
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      letter-spacing: 1px;
+      &:hover {
+        border-radius: 0px;
+        background-image: linear-gradient(133deg, #7c4dff 29.74%, #1783ff 86.78%) !important;
+      }
+    }
+  }
+}

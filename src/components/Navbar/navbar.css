@@ -1,0 +1,101 @@
+.navbar-wrapper {
+  box-shadow: 0 4px 10px 0 rgba(37, 49, 67, 0.16);
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  z-index: 10;
+  .navbar-container {
+    max-width: 1440px;
+    margin-inline: auto;
+    padding: 28px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+      }
+    }
+  }
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 0.8375rem 0rem;
+  }
+  .navbar-links {
+    .links {
+      color: #253143;
+      cursor: default;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 8px;
+      &:hover {
+        color: #7c4dff;
+        .arrow-icon {
+          fill: #7c4dff;
+        }
+      }
+      &.selected {
+        color: #7c4dff;
+        .arrow-icon {
+          fill: #7c4dff;
+          transform: rotate(-90deg);
+        }
+      }
+    }
+    .arrow-icon {
+      fill: #253143;
+      transform: rotate(90deg);
+      margin-left: 8px;
+    }
+  }
+  .header-actions {
+    display: flex;
+    align-items: center;
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 1rem;
+      margin-inline: 0.5rem;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      letter-spacing: 0.84px;
+    }
+    .icon-btn {
+      margin-inline: 0rem;
+      padding: 0.5rem;
+    }
+    .outlined {
+      border: 2px solid #7c4dff;
+      color: #7c4dff;
+      &:hover {
+        border-radius: 0px;
+        background-color: #7c4dff;
+        color: #fff;
+      }
+    }
+    .solid {
+      border: 2px solid #253143;
+      background-color: #253143;
+      color: #fff;
+      &:hover {
+        border-radius: 0px;
+        border: 2px solid #7c4dff;
+        background-color: #7c4dff;
+        color: #fff;
+      }
+    }
+  }
+}
